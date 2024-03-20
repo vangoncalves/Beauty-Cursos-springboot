@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+*
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oregano', sans-serif;
+        }
+        .container
+        {
+            background-color: rgb(185, 177, 177);
+            width: auto;
+            height: auto;
+            display: grid;
+            grid-template-areas: 
+            'header'
+            'nav'
+            'footer';
+            grid-template-columns: auto;
+            grid-template-rows: 70px 619px 100px;
+        }
+        header
+        {
+            grid-area: header;
+            background-color: brown;
+            
+        }
+        nav 
+        {
+            display: flex;
+            grid-area: nav;
+            background-color: rgb(239, 236, 243);
+            width: auto;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 30px;
+            color: rgb(239, 236, 243);
+        }
+        a
+        {
+            color: white;
+        }
+        footer 
+        {
+            grid-area: footer;
+            background-color: brown;
+            text-align: center;
+            padding-top: 70px;
+            color: white
+        }
+        .form-image
+        {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           background-color:rgb(239, 236, 243);
+           padding: 3rem;
+           width: 31rem;
+        }
+        .form header
+        {
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+        }
+        .form
+        {
+            width: 31rem;
+            display: flex;
+            padding: 161px;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            background-color: white;
+            padding: 3rem;
+        }
+        .input
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1rem;
+        }
+        .input-box
+        {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1.1rem;
+        }
+        .bot button
+        {
+            width: 100%;
+            margin-top: 2.5rem;
+            border: none;
+            background-color:brown;
+            padding: 0.62rem;
+            border-radius: 5px;
+        }

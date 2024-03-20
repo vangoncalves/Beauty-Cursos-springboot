@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Oregano&display=swap');
+*
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Oregano', sans-serif;
+        }
+        .container
+        {
+            background-color: rgb(185, 177, 177);
+            width: auto;
+            height: auto;
+
+            display: grid;
+            grid-template-areas: 
+            'header'
+            'nav'
+            'main'
+            'footer';
+            grid-template-columns: auto;
+            grid-template-rows: 70px auto auto 100px;
+        }
+        header
+        {
+            grid-area: header;
+            background-color: brown;
+            
+        }
+        nav 
+        {
+            grid-area: nav;
+            background-color: rgb(239, 236, 243);
+            text-align: center;
+            padding: 200px;
+        }
+        main 
+        {
+            grid-area: main;
+            background-color: rgb(239, 236, 243);
+            text-align: center;
+        }
+        footer 
+        {
+            grid-area: footer;
+            background-color: brown;
+            text-align: center;
+            padding-top: 70px;
+            color: white
+        }
+        .menu
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            padding-top: 30px;
+            color: rgb(239, 236, 243);
+        
+        }
+        .ser
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+        }
+        .box
+        {
+            border-radius: 20px;
+            background-color: white;
+            width: 290px;
+            height: 275px;
+        } 
+        header .menu a
+        {
+            color: white;
+        }
