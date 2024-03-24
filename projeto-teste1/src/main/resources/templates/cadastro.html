@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty & Cursos</title>
+    <link type="text/css" rel="stylesheet" th:href="@{/css/cadastro.css}">
+    <link rel="shortcut icon" th:href="@{/img/Beauty & Cursos.png}" type="image/x-icon"/>
+</head>
+<body>
+    <header>
+        <ul class="menu">
+            <li><a href="/">INÍCIO</a></li>
+            <li><a href="reservas-cursos/">RESERVAS E CURSOS</a></li>
+            <li><a href="autenticacao/">AUTENTICAÇÃO</a></li>
+            <li><a href="">CADASTRO</a></li>
+            <li><a href="perfil/">PERFIL</a></li>
+        </ul>
+    </header>
+    <nav>
+        <div class="form-image">
+            <img th:src="@{/img/online-page-animate.svg}">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastro</h1>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="input-box">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" name="nome" id="nome" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Telefone:</label>
+                        <input type="tel" name="number" id="number" placeholder="(xx) xxxx-xxxx" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail:</label>
+                        <input type="text" name="email" id="email" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha:</label>
+                        <input type="password" name="password" id="password" placeholder="Digite sua senha" required/>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmpassword">Repetir Senha:</label>
+                        <input type="password" name="confirmpassword" required/>
+                    </div>
+                </div>
+                <div class="bot">
+                    <button><a href="">Cadastrar</a></button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <footer>
+        <p>Copyright © Beauty & Cursos | 2023</p>
+    </footer>
+</body>
+</html>
